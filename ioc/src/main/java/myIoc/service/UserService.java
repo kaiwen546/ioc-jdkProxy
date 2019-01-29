@@ -1,12 +1,15 @@
 package myIoc.service;
 
 
+import myIoc.annotation.MyServicie;
 import myIoc.dao.UserDao;
 
 /**
  * Created by Kevin on 2019/1/24
  */
+@MyServicie("service")
 public class UserService {
+
     private UserDao dao;
 
     public void test(){

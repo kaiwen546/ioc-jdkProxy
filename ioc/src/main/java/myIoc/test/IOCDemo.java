@@ -12,6 +12,5 @@ public class IOCDemo {
         BeanFactory beanFactory = new BeanFactory("spring.xml");
         UserService service = (UserService) beanFactory.getBean("service");
         service.test();
-
     }
 }
