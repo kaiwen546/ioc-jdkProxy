@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-autowire="byType">
+
+     <!--自定义异常,有多个对象-->
+    <!--<bean id="dao1" class="myIoc.dao.TestDaoImpl"></bean>-->
+    <bean id="dao" class="myIoc.dao.UserDaoImpl"></bean>
+    <bean id="service" class="myIoc.service.UserService">
+        <!--   name="dao" 指UserService中对应 UserDao dao;  属性    类中有这个属性则注入-->
+        <!--<property name="dao" ref="dao"></property>-->
+        <!--<contructor-arg name="dao" ref="dao"></contructor-arg>-->
+    </bean>
+</beans>
